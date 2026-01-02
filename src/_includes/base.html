@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <!-- Added a container div for centering -->
+    <div class="container">
+        
+        <header>
+            <h1><a href="/">My Awesome Blog</a></h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Injects the title of the specific page -->
+            <h1>{{ title }}</h1>
+            
+            {{ content }}
+        </main>
+
+        <footer>
+            <p>&copy; 2024 My Name. Built with Eleventy.</p>
+        </footer>
+
+    </div>
+    
+</body>
+</html>

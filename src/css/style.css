@@ -1,0 +1,111 @@
+/* 1. Variables for easy theming */
+:root {
+    --bg-color: #fcfcfc;
+    --text-main: #2d3748;
+    --text-muted: #718096;
+    --primary-color: #3182ce; /* Nice Blue */
+    --primary-hover: #2c5282;
+    --border-color: #e2e8f0;
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  /* 2. Global Reset */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+  }
+  
+  /* 3. Layout Container */
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* 4. Header & Navigation */
+  header {
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between; /* Pushes Logo left, Nav right */
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--text-main);
+  }
+  
+  nav a {
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  nav a:hover, header h1 a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* 5. Typography */
+  h1, h2, h3 {
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.75rem; margin-top: 2rem; }
+  
+  p { margin-bottom: 1.5rem; }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+  }
+  
+  a:hover {
+    color: var(--primary-hover);
+  }
+  
+  /* 6. Post List (Homepage) */
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .post-list a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .post-list a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* 7. Footer */
+  footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+  }
